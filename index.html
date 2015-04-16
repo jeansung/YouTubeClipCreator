@@ -48,7 +48,7 @@ if(WTFF != 1)
 		+'&end='+stopField+'&autoplay='+autoplayFieldValue+'&amp;hl=en_US&amp;rel=0';
 else
 
-	window.alert('&#60;iframe width="640" height="360" src="http://www.youtube.com/embed/'+videoidField+'?rel=0&start='+startField+'&end='+stopField+'&autoplay='+autoplayFieldValue+'" frameborder="0" allowfullscreen&#62;&#60;/iframe&#62;');
+	document.getElementById("result").innerHTML = '&#60;iframe width="640" height="360" src="http://www.youtube.com/embed/'+videoidField+'?rel=0&start='+startField+'&end='+stopField+'&autoplay='+autoplayFieldValue+'" frameborder="0" allowfullscreen&#62;&#60;/iframe&#62;';
 
 
 }
@@ -90,8 +90,8 @@ else
 				<input type="button" value="Get the Code!" onclick="youtubeCode();" >
 
 						</FORM>
-
-						<p id="result"> Result: </p>
+						<P> Result: </P>
+						<p id="result">  </p>
 	</body>
 </html> 
 
