@@ -44,11 +44,11 @@ if(url == 0 || stopField.value == 0)
 
 // Embed option 
 if(WTFF != 1)
-	document.write('http://www.youtube.com/v/'+videoidField+'?version=3&start='+startField
+	window.alert('http://www.youtube.com/v/'+videoidField+'?version=3&start='+startField
 		+'&end='+stopField+'&autoplay='+autoplayFieldValue+'&amp;hl=en_US&amp;rel=0');
 else
 
-	document.write('&#60;iframe width="640" height="360" src="http://www.youtube.com/embed/'+videoidField+'?rel=0&start='+startField+'&end='+stopField+'&autoplay='+autoplayFieldValue+'" frameborder="0" allowfullscreen&#62;&#60;/iframe&#62;');
+	window.alert('&#60;iframe width="640" height="360" src="http://www.youtube.com/embed/'+videoidField+'?rel=0&start='+startField+'&end='+stopField+'&autoplay='+autoplayFieldValue+'" frameborder="0" allowfullscreen&#62;&#60;/iframe&#62;');
 
 
 }
